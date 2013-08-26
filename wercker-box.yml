@@ -1,5 +1,5 @@
 name : ubuntu12.04-ruby2.0.0
-version : 0.1.7
+version : 0.1.8
 inherits : wercker/ubuntu12.04-webessentials@0.0.5
 type : main
 platform : ubuntu@12.04
@@ -43,7 +43,7 @@ default-build:
     text-to-append: |
       # Build definition
       # See the Rails section on the wercker devcenter:
-      # http://devcenter.wercker.com/articles/languages/ruby/rails-heroku.html
+      # http://devcenter.wercker.com/articles/languages/ruby/settingup-rails4.html
       # You will want to define your database as follows: 
       # services:
       #   - wercker/postgresql
