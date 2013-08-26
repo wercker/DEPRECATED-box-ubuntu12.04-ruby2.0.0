@@ -1,5 +1,5 @@
 name : ubuntu12.04-ruby2.0.0
-version : 0.1.5
+version : 0.1.6
 inherits : wercker/ubuntu12.04-webessentials@0.0.5
 type : main
 platform : ubuntu@12.04
@@ -43,10 +43,14 @@ default-build:
     text-to-append: |
       build:
           # The steps that will be executed on build
+          # See the Rails4 section on our devcenter:
+          # http://devcenter.wercker.com/articles/languages/ruby/settingup-rails4.html
           steps:
               # A step that executes `bundle install` command
               - bundle-install
               # A step that prepares the database.yml with settings from the database you defined in services
+              # See more about services on our devcenter:
+              # http://devcenter.wercker.com/articles/services/
               #- rails-database-yml
               # A custom script step, name value is used in the UI
               # and the code value contains the command that get executed
@@ -68,6 +72,8 @@ default-build:
       # Build definition
       build:
         # The steps that will be executed on build
+        # See the Ruby section on the wercker devcenter: 
+        # http://devcenter.wercker.com/articles/languages/ruby.html
         steps:
           # A step that executes `bundle install` command
           - bundle-install
