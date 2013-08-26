@@ -1,5 +1,5 @@
 name : ubuntu12.04-ruby2.0.0
-version : 0.1.6
+version : 0.1.7
 inherits : wercker/ubuntu12.04-webessentials@0.0.5
 type : main
 platform : ubuntu@12.04
@@ -41,16 +41,19 @@ default-build:
       - files:
           - config
     text-to-append: |
+      # Build definition
+      # See the Rails section on the wercker devcenter:
+      # http://devcenter.wercker.com/articles/languages/ruby/rails-heroku.html
+      # You will want to define your database as follows: 
+      # services:
+      #   - wercker/postgresql
+      # See more about services on our devcenter:
+      # http://devcenter.wercker.com/articles/services/
       build:
-          # The steps that will be executed on build
-          # See the Rails4 section on our devcenter:
-          # http://devcenter.wercker.com/articles/languages/ruby/settingup-rails4.html
           steps:
               # A step that executes `bundle install` command
               - bundle-install
-              # A step that prepares the database.yml with settings from the database you defined in services
-              # See more about services on our devcenter:
-              # http://devcenter.wercker.com/articles/services/
+              # A step that prepares the database.yml using the database in services
               #- rails-database-yml
               # A custom script step, name value is used in the UI
               # and the code value contains the command that get executed
