@@ -1,5 +1,5 @@
 name : ubuntu12.04-ruby2.0.0
-version : 0.1.8
+version : 0.1.9
 inherits : wercker/ubuntu12.04-webessentials@0.0.5
 type : main
 platform : ubuntu@12.04
@@ -26,6 +26,9 @@ script : |
   rm -fr rubyinstall
   echo "gem: --no-rdoc --no-ri" >> $HOME/.gemrc
   sudo gem install bundler -v "1.3"
+  
+  echo "RAILS_ENV=test" | sudo tee -a /etc/environment
+  echo "RACK_ENV=test" | sudo tee -a /etc/environment
 
 box-detect:
   priority : 150
