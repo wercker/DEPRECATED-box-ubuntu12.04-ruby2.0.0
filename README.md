@@ -4,7 +4,7 @@ ubuntu12.04-ruby2.0.0
 
 # What's new
 
-- RAILS_ENV and RACK_ENV are now exported with "test"
+- `RAILS_ENV` and `RACK_ENV` are now exported with "test"
 
 # License
 
@@ -33,7 +33,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ## 0.1.9
 
-- RAILS_ENV and RACK_ENV are now exported with "test"
+- `RAILS_ENV` and `RACK_ENV` are now exported with "test"
 
 ## 0.1.5
 
