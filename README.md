@@ -31,7 +31,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 # Changelog
 
-## 0.1.6
+## 0.1.9
 
 - RAILS_ENV and RACK_ENV are now exported with "test"
 
