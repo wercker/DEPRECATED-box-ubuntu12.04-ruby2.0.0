@@ -3,7 +3,7 @@
 ubuntu12.04-ruby2.0.0
 
 # What's new
-
+- `libqtwebkit-dev` is now installed on the box for Capybara purposes
 - `RAILS_ENV` and `RACK_ENV` are now exported with "test"
 
 # License
@@ -31,6 +31,10 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 # Changelog
 
+## 0.2.0
+
+- `libqtwebkit-dev` installed on box for Capybara purposes
+
 ## 0.1.9
 
 - `RAILS_ENV` and `RACK_ENV` are now exported with "test"
@@ -38,8 +42,8 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ## 0.1.5
 
 - Update inheritance to wercker/ubuntu12.04-webessentials@0.0.5
-  - Update wercker-essential-cookbook to 0.0.4
-    - Update phantomjs to 1.9.1
+- Update wercker-essential-cookbook to 0.0.4
+- Update phantomjs to 1.9.1
 
 ## 0.1.3
 
