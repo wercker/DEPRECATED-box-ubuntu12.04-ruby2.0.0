@@ -3,8 +3,7 @@
 ubuntu12.04-ruby2.0.0
 
 # What's new
-- `libqtwebkit-dev` is now installed on the box for Capybara purposes
-- `RAILS_ENV` and `RACK_ENV` are now exported with "test"
+- Update reference to web-essentials version 0.0.11
 
 # License
 
@@ -30,6 +29,10 @@ IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 # Changelog
+
+## 0.3.0
+
+- Update reference to web-essentials version `0.0.11`
 
 ## 0.2.0
 
