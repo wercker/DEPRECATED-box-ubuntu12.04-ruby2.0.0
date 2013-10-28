@@ -3,7 +3,7 @@
 ubuntu12.04-ruby2.0.0
 
 # What's new
-- Update reference to web-essentials version 0.0.11
+- Update reference to web-essentials version 0.0.12
 
 # License
 
@@ -29,6 +29,10 @@ IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 # Changelog
+
+## 0.3.1
+
+- Update reference to web-essentials version `0.0.12`
 
 ## 0.3.0
 
