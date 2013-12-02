@@ -1,13 +1,13 @@
-name : ubuntu12.04-ruby2.0.0
-version : 1.0.0
-inherits : wercker/ubuntu12.04-webessentials@0.0.12
-type : main
-platform : ubuntu@12.04
-packages :
+name: ubuntu12.04-ruby2.0.0
+version: 1.0.0
+inherits: wercker/ubuntu12.04-webessentials@0.0.12
+type: main
+platform: ubuntu@12.04
+packages:
   - ruby@2.0.0-p353
 keywords:
   - ruby
-script : |
+script: |
   export RUBYVERSION=2.0.0-p353
   sudo apt-get update
   sudo apt-get install git zlib1g-dev libreadline-dev libqtwebkit-dev
