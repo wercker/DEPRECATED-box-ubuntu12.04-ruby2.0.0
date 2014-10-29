@@ -1,16 +1,24 @@
 # ubuntu12.04-ruby2.0.0 box
 
-An ubuntu box containing Ruby 2.0.0-p353.
+An ubuntu box containing Ruby 2.0.0-p594.
 
 # What's new
 
-- Update Ruby version to 2.0.0-p353
+- Update to `ruby-2.0.0-p594`
+- Update inherited box to `wercker/ubuntu12.04-webessentials@1.0.4`
+- Update `bundler` to `1.5`
 
 # License
 
 The MIT License (MIT)
 
 # Changelog
+
+## 2.0.0
+
+- Update to `ruby-2.0.0-p594`
+- Update inherited box to `wercker/ubuntu12.04-webessentials@1.0.4`
+- Update `bundler` to `1.5`
 
 ## 1.0.0
 
