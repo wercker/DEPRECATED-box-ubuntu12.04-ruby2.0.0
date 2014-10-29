@@ -1,14 +1,14 @@
 name: ubuntu12.04-ruby2.0.0
-version: 1.0.0
-inherits: wercker/ubuntu12.04-webessentials@0.0.12
+version: 2.0.0
+inherits: wercker/ubuntu12.04-webessentials@1.0.4
 type: main
 platform: ubuntu@12.04
 packages:
-  - ruby@2.0.0-p353
+  - ruby@2.0.0-p550
 keywords:
   - ruby
 script: |
-  export RUBYVERSION=2.0.0-p353
+  export RUBYVERSION=2.0.0-p550
   sudo apt-get update
   sudo apt-get install git zlib1g-dev libreadline-dev libqtwebkit-dev
   sudo apt-get remove ruby1.9.1
@@ -25,7 +25,7 @@ script: |
   cd $HOME
   rm -fr rubyinstall
   echo "gem: --no-rdoc --no-ri" >> $HOME/.gemrc
-  sudo gem install bundler -v "1.3"
+  sudo gem install bundler -v "1.5"
   
   echo "RAILS_ENV=test" | sudo tee -a /etc/environment
   echo "RACK_ENV=test" | sudo tee -a /etc/environment
